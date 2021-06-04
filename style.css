@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  background: rgb(230, 230, 230);
+}
+
+.filter-container {
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  width: 300px;
+  overflow: hidden;
+}
+
+.header {
+  background: linear-gradient(rgb(62, 183, 253), rgb(17, 103, 153));
+  color: #fff;
+  padding: 35px 20px;
+  text-align: center;
+  font-weight: 100;
+}
+
+.filter-sub-heading {
+  display: block;
+  margin: 5px 0 20px 0;
+}
+
+.input-filter {
+  background: rgba(0, 0, 0, 0.3);
+  border: 0;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 15px;
+  padding: 10px 15px;
+  width: 100%;
+  outline: none;
+}
+
+.user-list {
+  background: linear-gradient(#ffffff, #cecece);
+  list-style-type: none;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.user-list li {
+  display: flex;
+  padding: 20px;
+  border-bottom: 1px solid rgb(226, 226, 226);
+  cursor: pointer;
+}
+
+.user-list li:hover {
+  background: rgb(185, 185, 185);
+  transition: all 0.2s linear;
+}
+
+.user-list img {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+.user-info {
+  margin-left: 10px;
+}
+
+.user-info h3 {
+  margin-bottom: 10px;
+}
+
+.user-info p {
+  font-size: 14px;
+}
+
+.user-list li.hide {
+  display: none;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 20px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(105, 127, 139);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(82, 96, 104);
+}
